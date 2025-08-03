@@ -703,18 +703,20 @@ section,
 
 .skills .progress .skill .val {
   float: right;
-  font-style: normal;
+  font-style:normal;
 }
 
 .skills .progress-bar-wrap {
   background: color-mix(in srgb, var(--default-color), transparent 90%);
   height: 10px;
+  border-radius: 20px;
 }
 
 .skills .progress-bar {
   width: 1px;
   height: 10px;
   transition: 0.9s;
+  border-radius: 20px;
   background-color: var(--accent-color);
 }
 
