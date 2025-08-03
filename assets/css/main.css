@@ -551,6 +551,8 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  overflow: hidden;
 }
 
 .hero img {
@@ -572,19 +574,26 @@ section,
 }
 
 .hero .container {
-  position: relative;
+  /* position: relative; */
+
   z-index: 3;
 }
 
 .hero h2 {
   margin: 0;
   font-size: 64px;
+  font-weight: 500;
+}
+
+.hero h2 span {
+  margin: 0;
+  font-size: 70px;
   font-weight: 700;
 }
 
 .hero p {
   margin: 5px 0 0 0;
-  font-size: 26px;
+  font-size: 30px;
 }
 
 .hero p span {
