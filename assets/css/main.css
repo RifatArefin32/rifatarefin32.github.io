@@ -575,7 +575,7 @@ section,
 
 .hero .container {
   /* position: relative; */
-
+  margin-top: -10px;
   z-index: 3;
 }
 
@@ -1274,4 +1274,35 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+
+@media (max-width: 1199px) {
+  .about {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .resume {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .services {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .skills {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .testimonials {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .contact {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .info-wrap {
+    padding: 0px !important;
+  }
 }
