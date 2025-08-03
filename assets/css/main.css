@@ -143,6 +143,8 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
+  scrollbar-color: var(--nav-color) var(--nav-dropdown-background-color); 
+  scrollbar-3dlight-color: #151f2b;
   color: var(--default-color);
   background-color: var(--background-color);
   position: fixed;
