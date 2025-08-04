@@ -1278,6 +1278,33 @@ section,
   /* Add your styles here */
 }
 
+/* Add side */
+@media (min-width: 1200px) {
+  .about {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .resume {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .services {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .skills {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .testimonials {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .contact {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 
 @media (max-width: 1199px) {
   .about {
