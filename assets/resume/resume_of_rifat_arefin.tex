@@ -63,47 +63,27 @@
 }
 
 % Sections formatting
-\titleformat{\section}{
-  \vspace{-5pt}\scshape\raggedright\large\bfseries
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\titleformat{\section}
+{\scshape\raggedright\large\bfseries}
+{}{0em}{}
+[\color{black}\titlerule\vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
+
 %-------------------------
 % Custom commands
 %-------------------------
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
-        \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubheading}[4]{
-  \item
-    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-        \textbf{#1} & \textbf{\small #2} \\
-        \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}
-}
-
 \newcommand{\researchProjectItem}[3]{
     \item
-        \noindent
-        \begin{minipage}[t]{0.8\textwidth}
-            #1 \vspace{3pt}
-        \end{minipage}%
-        \hfill%
-        \begin{minipage}[t]{0.2\textwidth}
-            \raggedleft
-            \raisebox{0pt}[0pt][0pt]{\textbf{\small #2}}
-        \end{minipage}
-        \begin{minipage}[t]{1.0\textwidth}
-            \small #3
-        \end{minipage}
-        \vspace{-5pt}
+    \begin{tabular*}
+        {\linewidth}
+        {@{}p{0.78\linewidth}@{\extracolsep{\fill}}r@{}}
+        #1 & \small\textbf{#2}
+    \end{tabular*}
+    
+    \small #3
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -111,18 +91,28 @@
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textbf{\small #2} \\
+        \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
 \newcommand{\resumeItemListEnd}{\end{itemize}}
 
-\newcommand{\ExperienceItemListStart}{\begin{itemize}[leftmargin=0.3in]}
+\newcommand{\ExperienceItemListStart}{\vspace{5pt}\begin{itemize}[leftmargin=0.3in]}
 \newcommand{\ExperienceItemListEnd}{\end{itemize}}
 
 \newcommand{\resumeItem}[1]{\item {#1}}
 \newcommand{\resumeItemSmall}[1]{\item \small{#1}}
-
 %-------------------------------------------
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%  RESUME Starts Here  %%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
@@ -134,14 +124,15 @@
         \begin{flushleft}
             {\Huge \scshape Rifat Arefin} \\
             \vspace{5pt}
-            Road-1, House-2, Block-F, Mirpur-2, Dhaka-1216 \\
+            Road-1, House-2, Block-F, Nasimbag, Mirpur-2, Dhaka-1216 \\
             \vspace{5pt}
             \raisebox{-0.0\height}\faPhone\ +880--1881445919 ~ \\
             \vspace{5pt}
-            \href{mailto:arefinrifat786@gmail.com}{\raisebox{-0.1\height}\faEnvelope\  \underline{arefinrifat786@gmail.com}} ~ \\
-            \vspace{7pt}
-            \href{https://www.linkedin.com/in/rifatarefin32/}{\raisebox{-0.1\height}\faLinkedin\ \underline{linkedin.com/in/Rifat Arefin}}  ~
-            \href{https://github.com/RifatArefin32}{\raisebox{-0.1\height}\faGithub\ \underline{github.com/RifatArefin32}}
+            \href{mailto:arefinrifat786@gmail.com}{\raisebox{-0.1\height}\faEnvelope\  \underline{arefinrifat786@gmail.com}} ~ 
+            \href{https://www.linkedin.com/in/rifatarefin32/}{\raisebox{-0.1\height}\faLinkedin\ \underline{linkedin.com/in/Rifat Arefin}} \\
+            \vspace{5pt}
+            \href{https://github.com/RifatArefin32}{\raisebox{-0.1\height}\faGithub\ \underline{github.com/RifatArefin32}} ~
+            \href{https://rifatarefin32.github.io/}{\raisebox{-0.1\height}\faLink\ \underline{My Porfolio}}    
         \end{flushleft}
     \end{minipage}
     &
@@ -153,47 +144,46 @@
 \vspace{-10pt}
 
 %%%%%%%%%%%%%%%%%%%%  Career Objectives  %%%%%%%%%%%%%%%%%%%%
-% \section{Career Objective}
-% \justify
-% To use my in-depth expertise and enthusiasm for computer science and engineering to help students through mentorship and high-quality instruction. To improve the academic programs and better equip students for fruitful careers in the sector, I hope to share my expertise in curriculum creation, research, and innovation as well as develop my technical knowledge and skills on Computer Science.
+\section{Career Objective}
+\justify
+Backend-focused Software Engineer with experience in designing and developing scalable, reliable, 
+and maintainable software systems using modern engineering practices. Passionate about building 
+secure and high-performance backend solutions while exploring the intersection of Artificial 
+Intelligence, Machine Learning, and Cybersecurity. Aspiring to contribute to impactful research 
+and engineering solutions that address emerging challenges in intelligent and secure computing.
 
-%%%%%%%%%%%%%  Professional Experiences  %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%  Professional Experiences  %%%%%%%%%%%%%%%%%%%%
 \section{Professional Experiences}
 \resumeSubHeadingListStart
-
-    %  %item-1: Fiftytwo Digital Ltd
+    %item-1: Fiftytwo Digital Ltd.
     \resumeSubheading
     {Software Engineer}{March 2025 -- Present}
     {Fiftytwo Digital Ltd.}{Dhaka, Bangladesh}
-    \vspace{-12pt}
+    \vspace{-10pt}
     \ExperienceItemListStart
-        \resumeItemSmall{Developing 52Vikings POS for Fitytwo A/S, Denmark} \vspace{-2pt}
-        \resumeItem{\textbf{Skills: C++, SQLite}}
+        \resumeItemSmall{Contributed to the development of VIKING POS as a member of the Core Product Team of Fiftytwo A/S.} \vspace{-2pt}
+        \resumeItemSmall{Developed core functionality and business logic for numerous features using C++} \vspace{-2pt}
+        \resumeItemSmall{Developed device driver code to enable efficient communication between the software and various hardware systems} \vspace{-2pt}
+        \resumeItemSmall{Identified, debugged, and resolved software issues to improve product stability and reliability} \vspace{-2pt}
+        \resumeItem{\textbf{Skills: C++, Python, Bash, Linux, Multi-threading system, Docker, Hardware–Software Integration, Test Driven Development}}
     \ExperienceItemListEnd
+    
+    \vspace{2pt} % new line space
 
-    %item-1: Brain Station 23
+    %item-2: Brain Station 23
     \resumeSubheading
-    {Software Engineer I}{March 2024 -- Present}
+    {Software Engineer I}{March 2024 -- March 2025}
     {Brain Station 23 PLC.}{Dhaka, Bangladesh}
     \vspace{-12pt}
     \ExperienceItemListStart
-        \resumeItemSmall{Developed various client websites} \vspace{-2pt}
-        \resumeItemSmall{Developed various plugins for LMS} \vspace{-2pt}
-        \resumeItem{\textbf{Skills: PHP, Python, Laravel, Django, WordPress, MySQL, PostgreSQL}}
+        \resumeItemSmall{Contributed in TEQ, a multi-company vehicle management platform, for managing buses in Norway. Responsible for both frontend and backend development. Python (Django), Vue.js, MongoDB and PostgreSQL are used in this project} \vspace{-2pt}
+        \resumeItemSmall{Contributed to the backend of Pyramid, an online job posting and assessment platform. PHP, Laravel, Moodle, MySQL and Docker etc. are used} \vspace{-2pt}
+        \resumeItemSmall{Developed asset management system for Brain Station 23 PLC using PHP, Laravel, and MySQL} \vspace{-2pt}
+        \resumeItemSmall{Developed and maintained e-commerce and portfolio websites using WordPress} \vspace{-2pt}
+        \resumeItemSmall{Developed various custom Moodle plugins to meet specific client requirements on different LMS projects} \vspace{-2pt}
+        \resumeItem{\textbf{Skills: Python, Django, PHP, Laravel, WordPress, Moodle, Docker, MySQL, PostgreSQL, MongoDB}}
     \ExperienceItemListEnd
-
-    % %item-1: Brain Station 23
-    % \resumeSubheading
-    % {Associaite Software Engineer}{March 2024 -- Present}
-    % {Brain Station 23 PLC.}{Dhaka, Bangladesh}
-    % \vspace{-12pt}
-    % \resumeItemListStart
-    %     \resumeItemSmall{Developed various client websites} \vspace{-2pt}
-    %     \resumeItemSmall{Developed various plugins for LMS} \vspace{-2pt}
-    %     \resumeItem{\textbf{Skills: PHP, Laravel, Moodle, WordPress}}
-    % \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
 
 %%%%%%%%%%%%%%%%%%%%  Education  %%%%%%%%%%%%%%%%%%%%
 \section{Education}
@@ -211,10 +201,10 @@
     {Notre Dame College, Dhaka}{2016 -- 2018}
     \vspace{-9pt}
 
-    % Monipur High School & College
-    \resumeSubheading
-    {Secondary School Certificate}{GPA -- 5.00/ 5.00}
-    {Monipur High School \& College}{2006 -- 2016}
+    % % Monipur High School & College
+    % \resumeSubheading
+    % {Secondary School Certificate}{GPA -- 5.00/ 5.00}
+    % {Monipur High School \& College}{2006 -- 2016}
 \resumeSubHeadingListEnd
 
 %%%%%%%%%%%%%%%%%%  Relevent Courses  %%%%%%%%%%%%%%%%%%
@@ -230,153 +220,128 @@
 %             \end{itemize}
 %         \end{multicols}
 
-%%%%%%%%%%%%%%%%%%%%  Thesis and Researchs  %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%  Researches  %%%%%%%%%%%%%%%%%%%%
 \section{Research and Publications}
 \resumeSubHeadingListStart
-
     % Research: 1
     \researchProjectItem
     {
-        %title
         \textbf{An Analysis on Structural MRI Images for Better Alzheimer Disease Detection using Deep Neural Networks}
-        % Necessary Technology
          $|$ \emph{\small Deep learning, CNN, Python, Tensorflow, OpenCV}
-        % Paper Link
-        $|$ \href{https://dl.acm.org/doi/10.1145/3723178.3723302}{\textcolor{urlcolor}{\small Link}}
+         $|$ \href{https://dl.acm.org/doi/10.1145/3723178.3723302}{\textcolor{urlcolor}{\small Link}}
     }
-    %
-    % Time of Research
     {January, 2024}
-    % Description
-    {The objective of the research work is to classify different stages of Alzheimer's Disease from structural MRI using CNN based model. This research work has been published in the International Conference on Computing Advancements (ICCA), 2024.}
-
-    % % Research: 2
-    % \researchProjectItem
-    % {
-    %     %title
-    %     \textbf{An Analysis on Structural MRI Images for Better Alzheimer Disease Detection using Deep Neural Networks}
-    %     % Necessary Technology
-    %      $|$ \emph{\small Deep learning, CNN, Python, Tensorflow, OpenCV}
-    % }
-    % % Time of Research
-    % {January, 2025}
-    % % Description
-    % {The objective of the research work is to classify different stages of Alzheimer's Disease from structural MRI using CNN based model. This research work is being reviewed by International Conference on Computing Advancements - ICCA 2024.}
-
+    {
+        The objective of the research work is to classify different stages 
+        of Alzheimer's Disease from structural MRI using CNN based model. 
+        This research work has been published in the International Conference 
+        on Computing Advancements (ICCA), 2024.
+    }
 \resumeSubHeadingListEnd
 
-%%%%%%%%%%%%%%%%%%%%  Thesis and Researchs  %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%  Projects  %%%%%%%%%%%%%%%%%%%%
 \section{Major Projects}
 \resumeSubHeadingListStart
-    % Research: 1
+    % Project: motoXchange
     \researchProjectItem
     {
-        % Title
-        \textbf{motoXchange}
-        % Necessary Technology
-        $|$ \emph{\small PHP, HTML, CSS, JavaScript, MySQL}
-        % Project Link
+        \textbf{motoXchange} 
+        $|$ \emph{\small PHP, HTML, CSS, JavaScript, MySQL} 
         $|$ \href{https://github.com/RIfatArefin32/motoXchange}{\textcolor{urlcolor}{\small Project Link}}
+        
     }
-    % Time of Research
     {January, 2025}
-    % Description
-    {A web platform where people can buy, sell and exchange their used cars. It is developed using HTML, CSS, JavaScript and PHP without using any framework.}
-
-    % Research: 2
-    % \researchProjectItem
-    % {
-    %    % title
-    %     \textbf{Service-Now}
-    %     % Necessary Technology
-    %     $|$ \emph{\small Flutter, Dart, Google Map API}
-    %     % Project Link
-    %     $|$ \href{https://github.com/RifatArefin32/Service-Now-Merge-User-Provider}{\textcolor{urlcolor}{\small Project Link}}
-    % }
-    %  % Time of Research
-    % {September, 2022}
-    % % Description
-    % {This is a dynamic service application. In this project, there are several providers who provide services in response to service call from customers. The location of service seeker and the provider}
-
-    %%%%%% Project: Asset Management System %%%%%%
-    % \researchProjectItem
-    % {
-    %     % Title
-    %     \textbf{Asset Management System}
-    %     % Necessary Technology
-    %     $|$ \emph{\small PHP, Laravel, HTML, CSS, JavaScript, MySQL}
-    %     % Project Link
-    %     $|$ \href{https://github.com/RifatArefin32/Asset-Management-System}{\textcolor{urlcolor}{\small Project Link}}
-    % }
-    % % Time of Research
-    % {March, 2024}
-    % % Description
-    % {This project is developed based on Snipe-IT; an open-source IT asset management system. I customized Snipe-IT project according to the additional requirements.}
-
-    \researchProjectItem
-    % title
-    {\textbf{Buffalo Burger}
-    % Necessary Technology
-    $|$ \emph{\small Java, JavaFx, MySQL}
-    % Project Link
-    $|$ \href{https://github.com/RifatArefin32/Buffalo-Burger}{\textcolor{urlcolor}{\small Project Link}}
+    {
+        A web platform where people can buy, sell and exchange their used cars. 
+        It is developed using HTML, CSS, JavaScript and PHP without using any framework.
     }
-    % Time of Research
+
+    % Project: Service Now
+    \researchProjectItem
+    {
+        \textbf{Service-Now}
+        $|$ \emph{\small Flutter, Dart, Google Map API}
+        $|$ \href{https://github.com/RifatArefin32/Service-Now-Merge-User-Provider}{\textcolor{urlcolor}{\small Project Link}}
+    }
+    {September, 2022}
+    {
+        This is a dynamic service application. In this project, 
+        there are several providers who provide services in response to service 
+        call from customers. The location of service seeker and the provider
+    }
+
+    % Project: Mahjong Tiles
+    \researchProjectItem
+    {
+        \textbf{Mahjong Tiles}
+        $|$ \emph{\small Python, Tkinter}
+        $|$ \href{https://github.com/RifatArefin32/Mahjong-Tiles_AI-Game}{\textcolor{urlcolor}{\small Project Link}}
+    }
+    {June, 2023}
+    {
+        This is a game project developed in python. This is a two players game 
+        project. User can play with computer as well. Computer moves are determined 
+        by minimax algorithm and alpha-beta pruning.
+    }
+
+    % Project: Buffalo Burger
+    \researchProjectItem
+    {
+        \textbf{Buffalo Burger} 
+        $|$ \emph{\small Java, JavaFx, MySQL} 
+        $|$ \href{https://github.com/RifatArefin32/Buffalo-Burger}{\textcolor{urlcolor}{\small Project Link}}
+    }
     {June, 2021}
-    % Description
-    {A desktop application using JavaFx which is basically a cloud restaurant management system that has customer interface and admin control as well.}
-
-    % \researchProjectItem
-    % % title
-    % {\textbf{Mahjong Tiles}
-    % % Necessary Technology
-    % $|$ \emph{\small Python, Tkinter}
-    % % Project Link
-    % $|$ \href{https://github.com/RifatArefin32/Mahjong-Tiles_AI-Game}{\textcolor{urlcolor}{\small Project Link}}
-    % }
-    % % Time of Research
-    % {June, 2023}
-    % % Description
-    % {This is a game project developed in python. This is a two players game project. User can play with computer as well. Computer moves are determined by minimax algorithm and alpha-beta pruning.}
-
-    \researchProjectItem
-    % title
-    {\textbf{3D food court design}
-    % Necessary Technology
-    $|$ \emph{\small C, OpenGL 3.3}
-    % Project Link
-    $|$ \href{https://github.com/RifatArefin32/Mahjong-Tiles_AI-Game}{\textcolor{urlcolor}{\small Project Link}}
+    {
+        A desktop application using JavaFx which is basically a cloud restaurant 
+        management system that has customer interface and admin control as well.
     }
-    % Time of Research
+
+    % Project: 3D food court design
+    \researchProjectItem
+    {
+        \textbf{3D food court design}
+        $|$ \emph{\small C, OpenGL 3.3}
+        $|$ \href{https://github.com/RifatArefin32/Mahjong-Tiles_AI-Game}{\textcolor{urlcolor}{\small Project Link}}
+    }
     {November, 2023}
-    % Description
-    {Computer Graphics project in OpenGL that incorporates the basic theories of Computer Graphics. This project reflects a 3D design idea of a food court that comprises different shops selling varieties of foods and open space for customers to sit down and enjoy their times.}
+    {
+        Computer Graphics project in OpenGL that incorporates the basic theories 
+        of Computer Graphics. This project reflects a 3D design idea of a food 
+        court that comprises different shops selling varieties of foods and open 
+        space for customers to sit down and enjoy their times.
+    }
 
-    % \researchProjectItem
-    % % title
-    % {\textbf{Online Car Showroom Database Management System}
-    % % Necessary Technology
-    % $|$ \emph{\small SQL, PLSQL}
-    % % Project Link
-    % $|$ \href{https://github.com/RIfatArefin32/Online-Car-Showroom-Database-Management-System}{\textcolor{urlcolor}{\small Project Link}}
-    % }
-    % % Time of Research
-    % {July, 2022}
-    % % Description
-    % {A database management project that includes almost all necessary queries to maintain a Car Showroom.}
-
+    % Project: Online Car Showroom Database Management System
+    \researchProjectItem
+    {
+        \textbf{Online Car Showroom Database Management System}
+        $|$ \emph{\small SQL, PLSQL}
+        $|$ \href{https://github.com/RIfatArefin32/Online-Car-Showroom-Database-Management-System}{\textcolor{urlcolor}{\small Project Link}}
+    }
+    {July, 2022}
+    {
+        A database management project that includes almost all necessary queries 
+        to maintain a Car Showroom.
+    }
 \resumeSubHeadingListEnd
 
 %%%%%%%%%%%%%%%%%%  Technical Skills  %%%%%%%%%%%%%%%%%%
 \section{Technical Skills}
 \resumeItemListStart
-    \resumeItem{\textbf{Programming Languages: }C, C++, PHP, HTML, CSS, JavaScript, Python, Java}
+    \resumeItem{\textbf{Programming Languages: }C++, Python, PHP, JavaScript, HTML, CSS}
     \vspace{-6pt}
-    \resumeItem{\textbf{Web App Development: }Laravel, WordPress, Moodle}
+    \resumeItem{\textbf{Backend \& Web Development: }Django, Django REST Framework, Laravel, WordPress}
     \vspace{-6pt}
-    \resumeItem{\textbf{Mobile App Development: }Android Studio, Flutter}
+    \resumeItem{\textbf{Databases \& Data: }MySQL, PostgreSQL, MongoDB, SQLite}
     \vspace{-6pt}
-    \resumeItem{\textbf{Other tools and frameworks: }MySQL, Git \& Github, OpenCV, Tensorflow, OpenGL}
+    % \resumeItem{\textbf{Software Engineering: }OOP, Test-Driven Development, Multithreading \& Concurrency, REST APIs}
+    % \vspace{-6pt}
+    % \resumeItem{\textbf{AI \& Machine Learning: }TensorFlow, OpenCV, Deep Learning, Computer Vision}
+    % \vspace{-6pt}
+    \resumeItem{\textbf{AI-Assisted \& Agentic Development: }AI Coding Agents e.g. Codex, MCP, AI-assisted Code Generation, Code Review \& Refactoring}
+    \vspace{-6pt}
+    \resumeItem{\textbf{Others: }Docker, Git, GitHub, Linux}
 \resumeItemListEnd
 
 %%%%%%%%%%%%%%%%%%  Problem Solving Achievements  %%%%%%%%%%%%%%%%%%
