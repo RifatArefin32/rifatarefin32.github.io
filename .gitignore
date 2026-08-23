@@ -1,0 +1,4 @@
+# Ignore LaTeX build artifacts; keep résumé sources and PDFs.
+/assets/resume/*
+!/assets/resume/*.tex
+!/assets/resume/*.pdf
